@@ -1,28 +1,26 @@
 <html>
+	
 <head>
-	<title>Classwork 4</title>
+	<title>Node.js: Task 1</title>
 </head>
 
 <body>
 	<script>
-	function myFunction(one,two,three)
+	function myFunction(companyid, userid, password)
 	{
-		var a = one;
-		var b = two;
-		var c = three;
-		var len = b.length;
+		var len = password.length;
 		if(len < 8 || len > 12)
 		{
 			alert("Password should contain minimum 8 characters and maximum 12 characters");
 		}
 		else
 		{
-			alert("User ID: " + a + "\nPassword: " + b + "\nCompany ID: " + c);
+			alert("Company ID: " + companyid + "\n User ID: " + userid + "\n Password: " + password);
 		}
 	}
 	</script>
 	
-	<img src="Kinaxis Logo.jpg" alt="No image" height="200" style="float: left">
+	<img src="http://.../Kinaxis_Logo.jpg" alt="No image" height="200" style="float: left">
 	<font size="10">
 	<h1 style="background-color:Red">News</h1>
 	</font>
@@ -34,21 +32,26 @@
 	</font>
 	
 	<form>
-  	Company ID:<br><br>
-	<select name="companyid">
-  	<option value="PRAD01_DEM">PRAD01_DEM</option>
-  	<option value="PRAD02_DEM">PRAD02_DEM</option>
-  	<option value="PRAD03_DEM">PRAD03_DEM</option>
-	</select>
-  	<br><br>
-  	User ID:<br>
-  	<input type="text" name="userid">
-  	<br><br>
-	Password:<br>
-  	<input type="password" name="pwd" id="pwd1">
-  	<br><br>
-	<input type="checkbox" name="remember">Remember my Company and User ID<br><br>
-  	<button type="button" onclick="myFunction(userid.value,pwd1.value,companyid.value)">Sign-In</button>
+
+		Company ID:<br><br>
+			<select name="companyid">
+				<option value="PRAD01_DEM">PRAD01_DEM</option>
+				<option value="PRAD02_DEM">PRAD02_DEM</option>
+				<option value="PRAD03_DEM">PRAD03_DEM</option>
+			</select>
+		
+  		<br><br>User ID:<br>
+			<input type="text" name="userid">
+		
+		<br><br>Password:<br>
+			<input type="password" name="password" id="pwd1">
+
+		<br><br><input type="checkbox" name="remember">Remember my Company and User ID<br><br>
+		
+		<button type="button" onclick="myFunction(companyid.value, userid.value, password.value)">Sign-In</button>
+
 	</form> 
+
 </body>
+
 </html>
