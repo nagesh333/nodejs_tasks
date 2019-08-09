@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Classwork 4</title>
+</head>
+
+<body>
+	<script>
+	function myFunction(one,two,three)
+	{
+		var a = one;
+		var b = two;
+		var c = three;
+		var len = b.length;
+		if(len < 8 || len > 12)
+		{
+			alert("Password should contain minimum 8 characters and maximum 12 characters");
+		}
+	}
+	</script>
+	
+	<img src="Kinaxis Logo.jpg" alt="No image" height="200" style="float: left">
+	<font size="10">
+	<h1 style="background-color:Red">News</h1>
+	</font>
+	<font size="6">
+	<b><p style="background-color:Pink">Architecting Intelligent Supply Chains</p></b>
+	</font>
+	<font size="5">
+	<p>Our preferred/valued partner: <a href="http://www.pranaglobal.com/">Prana</a></p>
+	</font>
+	
+	<form action = "http://localhost:3000/spawn" method = "POST">
+		Company ID:<br><br>
+		<select name="companyid">
+		<option value="PRAD01_DEM">PRAD01_DEM</option>
+		<option value="PRAD02_DEM">PRAD02_DEM</option>
+		<option value="PRAD03_DEM">PRAD03_DEM</option>
+		</select>
+		<br><br>
+		User ID:<br>
+		<input type="text" name="userid">
+		<br><br>
+		Password:<br>
+		<input id = "pd" type="password" name="pwd">
+		<br><br>
+		<input type="checkbox" name="remember">Remember my Company and User ID<br><br>
+		<input type="submit" value="Submit">
+	</form> 
+</body>
+</html>
